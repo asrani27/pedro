@@ -21,7 +21,6 @@
             <a href="/superadmin/laporan/subkriteria" target="_blank" class="btn btn-sm btn-success">LAP. SUBKRITERIA</a>
             <a href="/superadmin/laporan/bobot" target="_blank" class="btn btn-sm btn-success">LAP. BOBOT NILAI</a>
             <a href="/superadmin/laporan/profil" target="_blank" class="btn btn-sm btn-success">LAP. PROFIL NILAI YG DI CARI</a>
-            <a href="/superadmin/laporan/hasil" target="_blank" class="btn btn-sm btn-success">LAP. HASIL PERHITUNGAN</a>
           </div>
           <!-- /.box-body -->
         </div>

@@ -32,6 +32,8 @@
             <th>No</th>
             <th>NIS </th>
             <th>Nama Siswa</th>
+            <th>Cocok Di Jurusan</th>
+            <th>Nilai</th>
         </tr>
         @php
             $no =1;
@@ -41,6 +43,8 @@
                 <td style="text-align: center">{{$no++}}</td>
                 <td>{{$item->nis}}</td>
                 <td>{{$item->nama}}</td>
+                <td>{{$item->jurusan}}</td>
+                <td>{{$item->nilai}}</td>
               
                 
             </tr>
