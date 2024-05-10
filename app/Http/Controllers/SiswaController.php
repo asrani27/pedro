@@ -32,19 +32,19 @@ class SiswaController extends Controller
         } else {
             Siswa::create($req->all());
             Session::flash('success', 'Berhasil');
-            return redirect('/superadmin/siswa');
+            return redirect('/superadmin/perhitungan');
         }
     }
     public function update(Request $req, $id)
     {
         $data = Siswa::find($id)->update($req->all());
         Session::flash('success', 'Berhasil');
-        return redirect('/superadmin/siswa');
+        return redirect('/superadmin/perhitungan');
     }
     public function delete($id)
     {
         $data = Siswa::find($id)->delete();
         Session::flash('success', 'Berhasil');
-        return redirect('/superadmin/siswa');
+        return redirect('/superadmin/perhitungan');
     }
 }

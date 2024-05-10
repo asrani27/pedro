@@ -23,6 +23,7 @@
                   <th>NIS </th>
                   <th>Nama Siswa</th>
                   <th>Cocok Di Jurusan</th>
+                  <th>Nilai</th>
                   <th>Aksi</th>
                 </tr>
                 @foreach ($data as $key => $item)
@@ -30,8 +31,10 @@
                     <td class="text-center">{{1 + $key}}</td>
                     <td>{{$item->nis}}</td>
                     <td>{{$item->nama}}</td>
-                    <td>IPA, dengan nilai 4.5</td>
+                    <td>{{$item->jurusan}}</td>
+                    <td>{{$item->nilai}}</td>
                     <td>
+                      <a href="/superadmin/perhitungan/{{$item->id}}/detail" class="btn btn-xs btn-flat  btn-success"><i class="fa fa-cogs"></i> Perhitungan</a>
                       <a href="/superadmin/siswa/edit/{{$item->id}}" class="btn btn-xs btn-flat  btn-success"><i class="fa fa-edit"></i></a>
                           <a href="/superadmin/siswa/delete/{{$item->id}}"
                             onclick="return confirm('Yakin ingin di hapus');"

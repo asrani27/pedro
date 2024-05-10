@@ -16,7 +16,7 @@
     <li class="{{ (request()->is('superadmin/bobot*')) ? 'active' : '' }}"><a href="/superadmin/bobot"><i class="fa fa-arrow-right"></i> <span><i>Data Bobot Nilai</i></span></a></li>
     <li class="{{ (request()->is('superadmin/kriteria*')) ? 'active' : '' }}"><a href="/superadmin/kriteria"><i class="fa fa-arrow-right"></i> <span><i>Data Kriteria</i></span></a></li>
     <li class="{{ (request()->is('superadmin/subkriteria*')) ? 'active' : '' }}"><a href="/superadmin/subkriteria"><i class="fa fa-arrow-right"></i> <span><i>Data Sub Kriteria</i></span></a></li>
-    <li class="{{ (request()->is('superadmin/siswa*')) ? 'active' : '' }}"><a href="/superadmin/siswa"><i class="fa fa-arrow-right"></i> <span><i>Data Siswa</i></span></a></li>
+    <li class="{{ (request()->is('superadmin/jurusan*')) ? 'active' : '' }}"><a href="/superadmin/jurusan"><i class="fa fa-arrow-right"></i> <span><i>Data jurusan</i></span></a></li>
 
     <li class="header">TRANSAKSI</li>
     <li class="{{ (request()->is('superadmin/standart*')) ? 'active' : '' }}"><a href="/superadmin/standart"><i class="fa fa-arrow-right"></i> <span><i>Profil Yang Di Cari</i></span></a></li>
