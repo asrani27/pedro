@@ -1,0 +1,37 @@
+@extends('layouts.app')
+@push('css')
+    
+@endpush
+@section('content')
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="box box-success">
+          <div class="box-header">
+            <i class="ion ion-clipboard"></i><h3 class="box-title">Data Laporan</h3>
+
+            <div class="box-tools">
+              
+            </div>
+          </div>
+          <!-- /.box-header -->
+          <div class="box-body table-responsive">
+            <a href="/superadmin/laporan/siswa" target="_blank" class="btn btn-sm btn-success">LAP. SISWA</a>
+            <a href="/superadmin/laporan/kriteria" target="_blank" class="btn btn-sm btn-success">LAP. KRITERIA</a>
+            <a href="/superadmin/laporan/subkriteria" target="_blank" class="btn btn-sm btn-success">LAP. SUBKRITERIA</a>
+            <a href="/superadmin/laporan/bobot" target="_blank" class="btn btn-sm btn-success">LAP. BOBOT NILAI</a>
+            <a href="/superadmin/laporan/profil" target="_blank" class="btn btn-sm btn-success">LAP. PROFIL NILAI YG DI CARI</a>
+            <a href="/superadmin/laporan/hasil" target="_blank" class="btn btn-sm btn-success">LAP. HASIL PERHITUNGAN</a>
+          </div>
+          <!-- /.box-body -->
+        </div>
+        
+        <!-- /.box -->
+      </div>
+</div>
+
+
+@endsection
+@push('js')
+
+@endpush
