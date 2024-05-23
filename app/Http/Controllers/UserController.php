@@ -27,7 +27,6 @@ class UserController extends Controller
             $role = Role::find($req->role_id);
             $n = new User;
             $n->name = $req->name;
-            $n->nama_kelompok = $req->nama_kelompok;
             $n->username = $req->username;
             $n->password = bcrypt($req->password);
             $n->save();
@@ -52,9 +51,9 @@ class UserController extends Controller
         $role = Role::find($req->role_id);
         $user = User::find($id);
         if ($req->password == null) {
-            $user->update(['name' => $req->name, 'nama_kelompok' => $req->nama_kelompok]);
+            $user->update(['name' => $req->name,]);
         } else {
-            $user->update(['name' => $req->name, 'nama_kelompok' => $req->nama_kelompok, 'password' => bcrypt($req->password)]);
+            $user->update(['name' => $req->name, 'password' => bcrypt($req->password)]);
         }
         $user->roles()->sync($role);
         Session::flash('success', 'Berhasil Di update');
