@@ -6,6 +6,7 @@ use App\Models\User;
 use App\Models\Bibit;
 use App\Models\Bobot;
 use App\Models\Deposito;
+use App\Models\Jurusan;
 use App\Models\Kriteria;
 use App\Models\Nasabah;
 use App\Models\Pegawai;
@@ -25,11 +26,14 @@ class LaporanController extends Controller
 
     public function index()
     {
-        return view('admin.laporan.index');
+        $jurusan = Jurusan::get();
+        return view('admin.laporan.index', compact('jurusan'));
     }
     public function siswa()
     {
-        $data = Siswa::get();
+        $jurusan = request()->get('jurusan');
+
+        $data = Siswa::where('jurusan', $jurusan)->orderBy('nilai', 'DESC')->get();
         return view('admin.laporan.siswa', compact('data'));
     }
 

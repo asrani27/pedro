@@ -34,17 +34,19 @@
             <th>Nama Siswa</th>
             <th>Cocok Di Jurusan</th>
             <th>Nilai</th>
+            <th>Rank</th>
         </tr>
         @php
             $no =1;
         @endphp
         @foreach ($data as $key => $item)
             <tr>
-                <td style="text-align: center">{{$no++}}</td>
+                <td style="text-align: center">{{$key+1}}</td>
                 <td>{{$item->nis}}</td>
                 <td>{{$item->nama}}</td>
                 <td>{{$item->jurusan}}</td>
                 <td>{{$item->nilai}}</td>
+                <td style="text-align: center">{{$key+1}}</td>
               
                 
             </tr>
